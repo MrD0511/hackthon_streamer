@@ -22,12 +22,14 @@ columns_to_remove = []
 machine_csv_map = {
     "cnc": "ai4i2020.csv",
     "velding": "sending_health.csv",
+    "pump": "pump_failure_detection_noisy_data.csv"
     # add more mappings as needed
 }
 
 columns_to_remove_map = {
     "cnc" : ["Machine failure", "TWF", "HDF", "PWF", "OSF", "RNF", "UID", "Type", "Product ID"],
-    "velding": ["timestamp", "cycle_id", "health"]
+    "velding": ["timestamp", "cycle_id", "health"],
+    "pump": ["timestamp", "pump_id", "current_failed_state"]
 }
 
 # Read CSV from file
