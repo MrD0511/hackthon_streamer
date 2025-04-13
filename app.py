@@ -20,14 +20,14 @@ broadcast_tasks = {}
 columns_to_remove = []
 
 machine_csv_map = {
-    "cnc": "ai4i2020.csv",
+    "cnc": "ai4i2020-health.csv",
     "velding": "sending_health.csv",
     "pump": "pump_failure_detection_noisy_data.csv"
     # add more mappings as needed
 }
 
 columns_to_remove_map = {
-    "cnc" : ["Machine failure", "TWF", "HDF", "PWF", "OSF", "RNF", "UID", "Type", "Product ID"],
+    "cnc" : ["Machine failure", "TWF", "HDF", "PWF", "OSF", "RNF", "UID", "Product ID"],
     "velding": ["timestamp", "cycle_id", "health"],
     "pump": ["timestamp", "pump_id", "current_failed_state"]
 }
